@@ -1,8 +1,8 @@
-# 📚 ScholarAI – AI Research Assistant
+## 📚 ScholarAI – AI Research Assistant
 
 A full-stack AI-powered Research Assistant built using Retrieval-Augmented Generation (RAG) and Google Gemini to help users interact with PDF documents and explore research papers intelligently.
 
-## 🚀 Features
+### 🚀 Features
 
 📄 PDF Upload & Analysis — Upload PDFs and extract content
 
@@ -16,7 +16,7 @@ A full-stack AI-powered Research Assistant built using Retrieval-Augmented Gener
 
 ⚡ Interactive Chat Interface — Student-friendly learning experience
 
-## 🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 | Layer      | Technology              |
 | ---------- | ----------------------- |
@@ -27,52 +27,27 @@ A full-stack AI-powered Research Assistant built using Retrieval-Augmented Gener
 | Embeddings | Sentence Transformers   |
 | Framework  | LangChain               |
 
-## ⚙️ Setup Instructions
+### ⚙️ Setup Instructions
 
-### Clone Repository
-
-git clone https://github.com/charishmamarrapu/ai-research-assistant.git
+1.Clone Repository git clone https://github.com/charishmamarrapu/ai-research-assistant.git
 cd ai-research-assistant
 
-### Install Dependencies
+2.Install Dependencies
 
 pip install -r requirements.txt
+
 npm install
 
-### Add API Key
+3.Add API Key
 
-Create a `.env` file:
+Create a `.env` file: GOOGLE_API_KEY=your_gemini_api_key
 
-GOOGLE_API_KEY=your_gemini_api_key
-
-### Run Backend
+4.Run Backend
 
 uvicorn main:app --reload
 
-### Run Frontend
+5.Run Frontend
 
 npm run dev
 
 Open: http://localhost:5173
-
-
-## 📁 Project Structure
-
-```text
-ai-research-assistant/
-├── backend/
-│   ├── main.py
-│   ├── utils/
-│   │   ├── pdf_loader.py
-│   │   ├── vector_store.py
-│   │   └── gemini_helper.py
-│
-├── src/
-│   ├── App.jsx
-│   ├── App.css
-│   └── assets/
-│
-├── public/
-├── package.json
-└── README.md
-```
