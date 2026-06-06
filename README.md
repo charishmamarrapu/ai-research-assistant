@@ -1,16 +1,78 @@
-# React + Vite
+# 📚 ScholarAI – AI Research Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack AI-powered Research Assistant built using Retrieval-Augmented Generation (RAG) and Google Gemini to help users interact with PDF documents and explore research papers intelligently.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+📄 PDF Upload & Analysis — Upload PDFs and extract content
 
-## React Compiler
+💬 AI Question Answering — Ask questions and get context-aware answers
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔍 RAG Pipeline — Semantic search using FAISS vector database
 
-## Expanding the ESLint configuration
+📚 Research Paper Search — Discover relevant research papers
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧠 AI-Generated Insights — Summarize papers and identify key trends
+
+⚡ Interactive Chat Interface — Student-friendly learning experience
+
+## 🛠️ Tech Stack
+
+| Layer      | Technology              |
+| ---------- | ----------------------- |
+| Frontend   | React + Vite            |
+| Backend    | FastAPI + Python        |
+| AI Model   | Google Gemini 2.5 Flash |
+| Vector DB  | FAISS                   |
+| Embeddings | Sentence Transformers   |
+| Framework  | LangChain               |
+
+## ⚙️ Setup Instructions
+
+### Clone Repository
+
+git clone https://github.com/charishmamarrapu/ai-research-assistant.git
+cd ai-research-assistant
+
+### Install Dependencies
+
+pip install -r requirements.txt
+npm install
+
+### Add API Key
+
+Create a `.env` file:
+
+GOOGLE_API_KEY=your_gemini_api_key
+
+### Run Backend
+
+uvicorn main:app --reload
+
+### Run Frontend
+
+npm run dev
+
+Open: http://localhost:5173
+
+
+## 📁 Project Structure
+
+```text
+ai-research-assistant/
+├── backend/
+│   ├── main.py
+│   ├── utils/
+│   │   ├── pdf_loader.py
+│   │   ├── vector_store.py
+│   │   └── gemini_helper.py
+│
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   └── assets/
+│
+├── public/
+├── package.json
+└── README.md
+```
